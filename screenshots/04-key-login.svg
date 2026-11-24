@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="457" viewBox="0 0 1000 457" role="img" aria-label="terminal — key-based SSH login succeeds">
+  <rect width="1000" height="457" rx="10" fill="#0d1117"/>
+  <path d="M0 10 A10 10 0 0 1 10 0 H990 A10 10 0 0 1 1000 10 V44 H0 Z" fill="#161b22"/>
+  <circle cx="26" cy="22" r="7" fill="#ff5f56"/>
+  <circle cx="50" cy="22" r="7" fill="#ffbd2e"/>
+  <circle cx="74" cy="22" r="7" fill="#27c93f"/>
+  <text x="500" y="27" text-anchor="middle" fill="#8b949e" font-family="Consolas, 'SFMono-Regular', 'Liberation Mono', Menlo, monospace" font-size="14">terminal — key-based SSH login succeeds</text>
+  <text x="26" y="78" fill="#3fb950" font-family="Consolas, 'SFMono-Regular', 'Liberation Mono', Menlo, monospace" font-size="14" xml:space="preserve">$ </text>
+  <text x="42.828" y="78" fill="#e6edf3" font-family="Consolas, 'SFMono-Regular', 'Liberation Mono', Menlo, monospace" font-size="14" xml:space="preserve">ssh -i ~/.ssh/id_ed25519 deploy@hardened.example.com</text>
+  <text x="26" y="101" fill="#8b949e" font-family="Consolas, 'SFMono-Regular', 'Liberation Mono', Menlo, monospace" font-size="14" xml:space="preserve">Linux web 6.1.0-13-amd64 #1 SMP PREEMPT_DYNAMIC Debian 6.1.55-1 x86_64</text>
+  <text x="26" y="124" fill="#c9d1d9" font-family="Consolas, 'SFMono-Regular', 'Liberation Mono', Menlo, monospace" font-size="14" xml:space="preserve"></text>
+  <text x="26" y="147" fill="#c9d1d9" font-family="Consolas, 'SFMono-Regular', 'Liberation Mono', Menlo, monospace" font-size="14" xml:space="preserve">The programs included with the Debian GNU/Linux system are free software.</text>
+  <text x="26" y="170" fill="#8b949e" font-family="Consolas, 'SFMono-Regular', 'Liberation Mono', Menlo, monospace" font-size="14" xml:space="preserve">Last login: Thu Nov 20 09:22:31 2026 from 198.51.100.7</text>
+  <text x="26" y="193" fill="#c9d1d9" font-family="Consolas, 'SFMono-Regular', 'Liberation Mono', Menlo, monospace" font-size="14" xml:space="preserve"></text>
+  <text x="26" y="216" fill="#3fb950" font-family="Consolas, 'SFMono-Regular', 'Liberation Mono', Menlo, monospace" font-size="14" xml:space="preserve">deploy@web:~$ </text>
+  <text x="143.796" y="216" fill="#e6edf3" font-family="Consolas, 'SFMono-Regular', 'Liberation Mono', Menlo, monospace" font-size="14" xml:space="preserve">sudo systemctl is-active nginx fail2ban unattended-upgrades</text>
+  <text x="26" y="239" fill="#3fb950" font-family="Consolas, 'SFMono-Regular', 'Liberation Mono', Menlo, monospace" font-size="14" xml:space="preserve">active</text>
+  <text x="26" y="262" fill="#3fb950" font-family="Consolas, 'SFMono-Regular', 'Liberation Mono', Menlo, monospace" font-size="14" xml:space="preserve">active</text>
+  <text x="26" y="285" fill="#3fb950" font-family="Consolas, 'SFMono-Regular', 'Liberation Mono', Menlo, monospace" font-size="14" xml:space="preserve">active</text>
+  <text x="26" y="308" fill="#c9d1d9" font-family="Consolas, 'SFMono-Regular', 'Liberation Mono', Menlo, monospace" font-size="14" xml:space="preserve"></text>
+  <text x="26" y="331" fill="#3fb950" font-family="Consolas, 'SFMono-Regular', 'Liberation Mono', Menlo, monospace" font-size="14" xml:space="preserve">deploy@web:~$ </text>
+  <text x="143.796" y="331" fill="#e6edf3" font-family="Consolas, 'SFMono-Regular', 'Liberation Mono', Menlo, monospace" font-size="14" xml:space="preserve">whoami</text>
+  <text x="26" y="354" fill="#c9d1d9" font-family="Consolas, 'SFMono-Regular', 'Liberation Mono', Menlo, monospace" font-size="14" xml:space="preserve">deploy</text>
+  <text x="26" y="377" fill="#3fb950" font-family="Consolas, 'SFMono-Regular', 'Liberation Mono', Menlo, monospace" font-size="14" xml:space="preserve">deploy@web:~$ </text>
+  <text x="143.796" y="377" fill="#e6edf3" font-family="Consolas, 'SFMono-Regular', 'Liberation Mono', Menlo, monospace" font-size="14" xml:space="preserve">sudo -n true &amp;&amp; echo &quot;sudo via key, no password&quot;</text>
+  <text x="26" y="400" fill="#3fb950" font-family="Consolas, 'SFMono-Regular', 'Liberation Mono', Menlo, monospace" font-size="14" xml:space="preserve">sudo via key, no password</text>
+  </svg>

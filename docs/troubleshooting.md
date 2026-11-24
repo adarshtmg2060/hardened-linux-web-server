@@ -1,5 +1,7 @@
 # Troubleshooting
 
+> Part of the [main README](../readme.md) · [Screenshot evidence](../screenshots/README.md)
+
 ## I locked myself out of SSH
 
 The script keeps the old session alive on purpose. From the **existing**

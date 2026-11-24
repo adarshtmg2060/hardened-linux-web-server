@@ -1,5 +1,7 @@
 # Verification (the attacker's view)
 
+> Part of the [main README](../readme.md) · [Screenshot evidence](../screenshots/README.md) — each check below has a matching capture.
+
 "Assume nothing, test from outside." Do these from a **different machine**, not
 from the server itself. Fill in the Results table with your own numbers.
 

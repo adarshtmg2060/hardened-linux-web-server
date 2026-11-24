@@ -1,5 +1,7 @@
 # Installation
 
+> Part of the [main README](../readme.md) · [Screenshot evidence](../screenshots/README.md)
+
 The project was built the way the brief asks: **first by hand, then as a
 script**. This page keeps both paths so the reasoning behind every command is
 visible.

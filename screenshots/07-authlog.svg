@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="398" viewBox="0 0 1000 398" role="img" aria-label="terminal — auth.log after a day online">
+  <rect width="1000" height="398" rx="10" fill="#0d1117"/>
+  <path d="M0 10 A10 10 0 0 1 10 0 H990 A10 10 0 0 1 1000 10 V44 H0 Z" fill="#161b22"/>
+  <circle cx="26" cy="22" r="7" fill="#ff5f56"/>
+  <circle cx="50" cy="22" r="7" fill="#ffbd2e"/>
+  <circle cx="74" cy="22" r="7" fill="#27c93f"/>
+  <text x="500" y="27" text-anchor="middle" fill="#8b949e" font-family="Consolas, 'SFMono-Regular', 'Liberation Mono', Menlo, monospace" font-size="14">terminal — auth.log after a day online</text>
+  <text x="26" y="78" fill="#3fb950" font-family="Consolas, 'SFMono-Regular', 'Liberation Mono', Menlo, monospace" font-size="12.5" xml:space="preserve">$ </text>
+  <text x="41.025" y="78" fill="#e6edf3" font-family="Consolas, 'SFMono-Regular', 'Liberation Mono', Menlo, monospace" font-size="12.5" xml:space="preserve">sudo grep &quot;Failed password&quot; /var/log/auth.log | head</text>
+  <text x="26" y="100" fill="#c9d1d9" font-family="Consolas, 'SFMono-Regular', 'Liberation Mono', Menlo, monospace" font-size="12.5" xml:space="preserve">Nov 20 08:41:12 web sshd[1842]: Failed password for invalid user admin  from 198.51.100.23 port 54213 ssh2</text>
+  <text x="26" y="122" fill="#c9d1d9" font-family="Consolas, 'SFMono-Regular', 'Liberation Mono', Menlo, monospace" font-size="12.5" xml:space="preserve">Nov 20 08:41:14 web sshd[1842]: Failed password for invalid user admin  from 198.51.100.23 port 54213 ssh2</text>
+  <text x="26" y="144" fill="#c9d1d9" font-family="Consolas, 'SFMono-Regular', 'Liberation Mono', Menlo, monospace" font-size="12.5" xml:space="preserve">Nov 20 08:43:51 web sshd[1857]: Failed password for root              from 203.0.113.9   port 40122 ssh2</text>
+  <text x="26" y="166" fill="#c9d1d9" font-family="Consolas, 'SFMono-Regular', 'Liberation Mono', Menlo, monospace" font-size="12.5" xml:space="preserve">Nov 20 08:44:03 web sshd[1857]: Failed password for invalid user ubuntu from 203.0.113.9   port 40122 ssh2</text>
+  <text x="26" y="188" fill="#c9d1d9" font-family="Consolas, 'SFMono-Regular', 'Liberation Mono', Menlo, monospace" font-size="12.5" xml:space="preserve">Nov 20 08:47:29 web sshd[1871]: Failed password for invalid user test   from 198.51.100.77 port 33210 ssh2</text>
+  <text x="26" y="210" fill="#c9d1d9" font-family="Consolas, 'SFMono-Regular', 'Liberation Mono', Menlo, monospace" font-size="12.5" xml:space="preserve"></text>
+  <text x="26" y="232" fill="#3fb950" font-family="Consolas, 'SFMono-Regular', 'Liberation Mono', Menlo, monospace" font-size="12.5" xml:space="preserve">$ </text>
+  <text x="41.025" y="232" fill="#e6edf3" font-family="Consolas, 'SFMono-Regular', 'Liberation Mono', Menlo, monospace" font-size="12.5" xml:space="preserve">sudo grep -c &quot;Failed password&quot; /var/log/auth.log</text>
+  <text x="26" y="254" fill="#d29922" font-family="Consolas, 'SFMono-Regular', 'Liberation Mono', Menlo, monospace" font-size="12.5" xml:space="preserve">2147</text>
+  <text x="26" y="276" fill="#3fb950" font-family="Consolas, 'SFMono-Regular', 'Liberation Mono', Menlo, monospace" font-size="12.5" xml:space="preserve">$ </text>
+  <text x="41.025" y="276" fill="#e6edf3" font-family="Consolas, 'SFMono-Regular', 'Liberation Mono', Menlo, monospace" font-size="12.5" xml:space="preserve">sudo grep -c &quot;Invalid user&quot; /var/log/auth.log</text>
+  <text x="26" y="298" fill="#d29922" font-family="Consolas, 'SFMono-Regular', 'Liberation Mono', Menlo, monospace" font-size="12.5" xml:space="preserve">1806</text>
+  <text x="26" y="320" fill="#c9d1d9" font-family="Consolas, 'SFMono-Regular', 'Liberation Mono', Menlo, monospace" font-size="12.5" xml:space="preserve"></text>
+  <text x="26" y="342" fill="#3fb950" font-family="Consolas, 'SFMono-Regular', 'Liberation Mono', Menlo, monospace" font-size="12.5" xml:space="preserve">✓ ~2k password guesses in 24h — all logged, most banned by fail2ban.</text>
+  </svg>

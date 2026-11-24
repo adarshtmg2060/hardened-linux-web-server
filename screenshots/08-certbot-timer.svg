@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="420" viewBox="0 0 1000 420" role="img" aria-label="terminal — automatic TLS renewal">
+  <rect width="1000" height="420" rx="10" fill="#0d1117"/>
+  <path d="M0 10 A10 10 0 0 1 10 0 H990 A10 10 0 0 1 1000 10 V44 H0 Z" fill="#161b22"/>
+  <circle cx="26" cy="22" r="7" fill="#ff5f56"/>
+  <circle cx="50" cy="22" r="7" fill="#ffbd2e"/>
+  <circle cx="74" cy="22" r="7" fill="#27c93f"/>
+  <text x="500" y="27" text-anchor="middle" fill="#8b949e" font-family="Consolas, 'SFMono-Regular', 'Liberation Mono', Menlo, monospace" font-size="14">terminal — automatic TLS renewal</text>
+  <text x="26" y="78" fill="#3fb950" font-family="Consolas, 'SFMono-Regular', 'Liberation Mono', Menlo, monospace" font-size="13" xml:space="preserve">$ </text>
+  <text x="41.626" y="78" fill="#e6edf3" font-family="Consolas, 'SFMono-Regular', 'Liberation Mono', Menlo, monospace" font-size="13" xml:space="preserve">systemctl status certbot.timer --no-pager</text>
+  <text x="26" y="100" fill="#3fb950" font-family="Consolas, 'SFMono-Regular', 'Liberation Mono', Menlo, monospace" font-size="13" xml:space="preserve">● certbot.timer - Run certbot twice daily</text>
+  <text x="26" y="122" fill="#c9d1d9" font-family="Consolas, 'SFMono-Regular', 'Liberation Mono', Menlo, monospace" font-size="13" xml:space="preserve">     Loaded: loaded (/lib/systemd/system/certbot.timer; enabled; vendor preset: enabled)</text>
+  <text x="26" y="144" fill="#c9d1d9" font-family="Consolas, 'SFMono-Regular', 'Liberation Mono', Menlo, monospace" font-size="13" xml:space="preserve">     Active: active (waiting) since Wed 2026-11-18 06:00:01 UTC; 2 days ago</text>
+  <text x="26" y="166" fill="#c9d1d9" font-family="Consolas, 'SFMono-Regular', 'Liberation Mono', Menlo, monospace" font-size="13" xml:space="preserve">    Trigger: Fri 2026-11-21 03:37:12 UTC; 18h left</text>
+  <text x="26" y="188" fill="#c9d1d9" font-family="Consolas, 'SFMono-Regular', 'Liberation Mono', Menlo, monospace" font-size="13" xml:space="preserve"></text>
+  <text x="26" y="210" fill="#3fb950" font-family="Consolas, 'SFMono-Regular', 'Liberation Mono', Menlo, monospace" font-size="13" xml:space="preserve">$ </text>
+  <text x="41.626" y="210" fill="#e6edf3" font-family="Consolas, 'SFMono-Regular', 'Liberation Mono', Menlo, monospace" font-size="13" xml:space="preserve">sudo certbot renew --dry-run</text>
+  <text x="26" y="232" fill="#8b949e" font-family="Consolas, 'SFMono-Regular', 'Liberation Mono', Menlo, monospace" font-size="13" xml:space="preserve">Saving debug log to /var/log/letsencrypt/letsencrypt.log</text>
+  <text x="26" y="254" fill="#8b949e" font-family="Consolas, 'SFMono-Regular', 'Liberation Mono', Menlo, monospace" font-size="13" xml:space="preserve">- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -</text>
+  <text x="26" y="276" fill="#c9d1d9" font-family="Consolas, 'SFMono-Regular', 'Liberation Mono', Menlo, monospace" font-size="13" xml:space="preserve">Processing /etc/letsencrypt/renewal/hardened.example.com.conf</text>
+  <text x="26" y="298" fill="#c9d1d9" font-family="Consolas, 'SFMono-Regular', 'Liberation Mono', Menlo, monospace" font-size="13" xml:space="preserve">Simulating renewal of an existing certificate for hardened.example.com</text>
+  <text x="26" y="320" fill="#8b949e" font-family="Consolas, 'SFMono-Regular', 'Liberation Mono', Menlo, monospace" font-size="13" xml:space="preserve">- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -</text>
+  <text x="26" y="342" fill="#3fb950" font-family="Consolas, 'SFMono-Regular', 'Liberation Mono', Menlo, monospace" font-size="13" xml:space="preserve">Congratulations, all simulated renewals succeeded:</text>
+  <text x="26" y="364" fill="#3fb950" font-family="Consolas, 'SFMono-Regular', 'Liberation Mono', Menlo, monospace" font-size="13" xml:space="preserve">  /etc/letsencrypt/live/hardened.example.com/fullchain.pem (success)</text>
+  </svg>

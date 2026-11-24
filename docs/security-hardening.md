@@ -1,5 +1,7 @@
 # Security hardening reference
 
+> Part of the [main README](../readme.md) · [Screenshot evidence](../screenshots/README.md)
+
 Each control, the exact setting, and the reason it exists. All file paths are
 on the server; the repo copies live in `config/`.
 

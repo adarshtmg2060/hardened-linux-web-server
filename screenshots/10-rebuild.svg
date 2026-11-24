@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="508" viewBox="0 0 1000 508" role="img" aria-label="terminal — full rebuild from one idempotent script">
+  <rect width="1000" height="508" rx="10" fill="#0d1117"/>
+  <path d="M0 10 A10 10 0 0 1 10 0 H990 A10 10 0 0 1 1000 10 V44 H0 Z" fill="#161b22"/>
+  <circle cx="26" cy="22" r="7" fill="#ff5f56"/>
+  <circle cx="50" cy="22" r="7" fill="#ffbd2e"/>
+  <circle cx="74" cy="22" r="7" fill="#27c93f"/>
+  <text x="500" y="27" text-anchor="middle" fill="#8b949e" font-family="Consolas, 'SFMono-Regular', 'Liberation Mono', Menlo, monospace" font-size="14">terminal — full rebuild from one idempotent script</text>
+  <text x="26" y="78" fill="#3fb950" font-family="Consolas, 'SFMono-Regular', 'Liberation Mono', Menlo, monospace" font-size="13.5" xml:space="preserve">$ </text>
+  <text x="42.227000000000004" y="78" fill="#e6edf3" font-family="Consolas, 'SFMono-Regular', 'Liberation Mono', Menlo, monospace" font-size="13.5" xml:space="preserve">sudo bash scripts/setup.sh \</text>
+  <text x="26" y="100" fill="#3fb950" font-family="Consolas, 'SFMono-Regular', 'Liberation Mono', Menlo, monospace" font-size="13.5" xml:space="preserve">&gt; </text>
+  <text x="42.227000000000004" y="100" fill="#e6edf3" font-family="Consolas, 'SFMono-Regular', 'Liberation Mono', Menlo, monospace" font-size="13.5" xml:space="preserve">    --domain hardened.example.com --email you@example.com \</text>
+  <text x="26" y="122" fill="#3fb950" font-family="Consolas, 'SFMono-Regular', 'Liberation Mono', Menlo, monospace" font-size="13.5" xml:space="preserve">&gt; </text>
+  <text x="42.227000000000004" y="122" fill="#e6edf3" font-family="Consolas, 'SFMono-Regular', 'Liberation Mono', Menlo, monospace" font-size="13.5" xml:space="preserve">    --admin-user deploy --ssh-key ~/.ssh/id_ed25519.pub</text>
+  <text x="26" y="144" fill="#c9d1d9" font-family="Consolas, 'SFMono-Regular', 'Liberation Mono', Menlo, monospace" font-size="13.5" xml:space="preserve"></text>
+  <text x="26" y="166" fill="#8b949e" font-family="Consolas, 'SFMono-Regular', 'Liberation Mono', Menlo, monospace" font-size="13.5" xml:space="preserve">[09:02:11] INFO  admin user &quot;deploy&quot; ready; root SSH login disabled</text>
+  <text x="26" y="188" fill="#8b949e" font-family="Consolas, 'SFMono-Regular', 'Liberation Mono', Menlo, monospace" font-size="13.5" xml:space="preserve">[09:02:14] INFO  sshd hardened — key-only auth, AllowUsers=deploy</text>
+  <text x="26" y="210" fill="#8b949e" font-family="Consolas, 'SFMono-Regular', 'Liberation Mono', Menlo, monospace" font-size="13.5" xml:space="preserve">[09:02:15] INFO  ufw default deny; allowing 22, 80, 443</text>
+  <text x="26" y="232" fill="#8b949e" font-family="Consolas, 'SFMono-Regular', 'Liberation Mono', Menlo, monospace" font-size="13.5" xml:space="preserve">[09:02:19] INFO  webuser created; nginx site + headers installed</text>
+  <text x="26" y="254" fill="#8b949e" font-family="Consolas, 'SFMono-Regular', 'Liberation Mono', Menlo, monospace" font-size="13.5" xml:space="preserve">[09:02:44] INFO  TLS certificate issued for hardened.example.com</text>
+  <text x="26" y="276" fill="#8b949e" font-family="Consolas, 'SFMono-Regular', 'Liberation Mono', Menlo, monospace" font-size="13.5" xml:space="preserve">[09:02:45] INFO  certbot.timer enabled; reload hook installed</text>
+  <text x="26" y="298" fill="#8b949e" font-family="Consolas, 'SFMono-Regular', 'Liberation Mono', Menlo, monospace" font-size="13.5" xml:space="preserve">[09:02:47] INFO  fail2ban jails active: sshd, nginx, recidive</text>
+  <text x="26" y="320" fill="#8b949e" font-family="Consolas, 'SFMono-Regular', 'Liberation Mono', Menlo, monospace" font-size="13.5" xml:space="preserve">[09:02:49] INFO  unattended-upgrades + apt timers enabled</text>
+  <text x="26" y="342" fill="#3fb950" font-family="Consolas, 'SFMono-Regular', 'Liberation Mono', Menlo, monospace" font-size="13.5" xml:space="preserve">[09:02:50] OK    setup complete — safe to expose</text>
+  <text x="26" y="364" fill="#c9d1d9" font-family="Consolas, 'SFMono-Regular', 'Liberation Mono', Menlo, monospace" font-size="13.5" xml:space="preserve"></text>
+  <text x="26" y="386" fill="#3fb950" font-family="Consolas, 'SFMono-Regular', 'Liberation Mono', Menlo, monospace" font-size="13.5" xml:space="preserve">$ </text>
+  <text x="42.227000000000004" y="386" fill="#e6edf3" font-family="Consolas, 'SFMono-Regular', 'Liberation Mono', Menlo, monospace" font-size="13.5" xml:space="preserve">sudo bash scripts/setup.sh ...   # second run</text>
+  <text x="26" y="408" fill="#3fb950" font-family="Consolas, 'SFMono-Regular', 'Liberation Mono', Menlo, monospace" font-size="13.5" xml:space="preserve">[09:05:02] OK    setup complete — no duplicate rules, configs unchanged</text>
+  <text x="26" y="430" fill="#c9d1d9" font-family="Consolas, 'SFMono-Regular', 'Liberation Mono', Menlo, monospace" font-size="13.5" xml:space="preserve"></text>
+  <text x="26" y="452" fill="#3fb950" font-family="Consolas, 'SFMono-Regular', 'Liberation Mono', Menlo, monospace" font-size="13.5" xml:space="preserve">✓ Destroy the VM, re-run setup.sh, and you get the same server.</text>
+  </svg>

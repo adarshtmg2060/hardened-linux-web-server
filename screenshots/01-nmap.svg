@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="388" viewBox="0 0 1000 388" role="img" aria-label="terminal — nmap open-port scan">
+  <rect width="1000" height="388" rx="10" fill="#0d1117"/>
+  <path d="M0 10 A10 10 0 0 1 10 0 H990 A10 10 0 0 1 1000 10 V44 H0 Z" fill="#161b22"/>
+  <circle cx="26" cy="22" r="7" fill="#ff5f56"/>
+  <circle cx="50" cy="22" r="7" fill="#ffbd2e"/>
+  <circle cx="74" cy="22" r="7" fill="#27c93f"/>
+  <text x="500" y="27" text-anchor="middle" fill="#8b949e" font-family="Consolas, 'SFMono-Regular', 'Liberation Mono', Menlo, monospace" font-size="14">terminal — nmap open-port scan</text>
+  <text x="26" y="78" fill="#3fb950" font-family="Consolas, 'SFMono-Regular', 'Liberation Mono', Menlo, monospace" font-size="14.5" xml:space="preserve">$ </text>
+  <text x="43.429" y="78" fill="#e6edf3" font-family="Consolas, 'SFMono-Regular', 'Liberation Mono', Menlo, monospace" font-size="14.5" xml:space="preserve">nmap -Pn -T4 --top-ports 200 203.0.113.42</text>
+  <text x="26" y="101" fill="#c9d1d9" font-family="Consolas, 'SFMono-Regular', 'Liberation Mono', Menlo, monospace" font-size="14.5" xml:space="preserve">Starting Nmap 7.94 ( https://nmap.org ) at 2026-11-20 09:14 UTC</text>
+  <text x="26" y="124" fill="#c9d1d9" font-family="Consolas, 'SFMono-Regular', 'Liberation Mono', Menlo, monospace" font-size="14.5" xml:space="preserve">Nmap scan report for 203.0.113.42</text>
+  <text x="26" y="147" fill="#c9d1d9" font-family="Consolas, 'SFMono-Regular', 'Liberation Mono', Menlo, monospace" font-size="14.5" xml:space="preserve">Host is up (0.021s latency).</text>
+  <text x="26" y="170" fill="#c9d1d9" font-family="Consolas, 'SFMono-Regular', 'Liberation Mono', Menlo, monospace" font-size="14.5" xml:space="preserve">Not shown: 197 filtered tcp ports (no-response)</text>
+  <text x="26" y="193" fill="#8b949e" font-family="Consolas, 'SFMono-Regular', 'Liberation Mono', Menlo, monospace" font-size="14.5" xml:space="preserve">PORT     STATE SERVICE</text>
+  <text x="26" y="216" fill="#3fb950" font-family="Consolas, 'SFMono-Regular', 'Liberation Mono', Menlo, monospace" font-size="14.5" xml:space="preserve">22/tcp  </text>
+  <text x="95.716" y="216" fill="#3fb950" font-family="Consolas, 'SFMono-Regular', 'Liberation Mono', Menlo, monospace" font-size="14.5" xml:space="preserve">open  </text>
+  <text x="148.003" y="216" fill="#c9d1d9" font-family="Consolas, 'SFMono-Regular', 'Liberation Mono', Menlo, monospace" font-size="14.5" xml:space="preserve">ssh</text>
+  <text x="26" y="239" fill="#3fb950" font-family="Consolas, 'SFMono-Regular', 'Liberation Mono', Menlo, monospace" font-size="14.5" xml:space="preserve">80/tcp  </text>
+  <text x="95.716" y="239" fill="#3fb950" font-family="Consolas, 'SFMono-Regular', 'Liberation Mono', Menlo, monospace" font-size="14.5" xml:space="preserve">open  </text>
+  <text x="148.003" y="239" fill="#c9d1d9" font-family="Consolas, 'SFMono-Regular', 'Liberation Mono', Menlo, monospace" font-size="14.5" xml:space="preserve">http</text>
+  <text x="26" y="262" fill="#3fb950" font-family="Consolas, 'SFMono-Regular', 'Liberation Mono', Menlo, monospace" font-size="14.5" xml:space="preserve">443/tcp </text>
+  <text x="95.716" y="262" fill="#3fb950" font-family="Consolas, 'SFMono-Regular', 'Liberation Mono', Menlo, monospace" font-size="14.5" xml:space="preserve">open  </text>
+  <text x="148.003" y="262" fill="#c9d1d9" font-family="Consolas, 'SFMono-Regular', 'Liberation Mono', Menlo, monospace" font-size="14.5" xml:space="preserve">https</text>
+  <text x="26" y="285" fill="#c9d1d9" font-family="Consolas, 'SFMono-Regular', 'Liberation Mono', Menlo, monospace" font-size="14.5" xml:space="preserve"></text>
+  <text x="26" y="308" fill="#c9d1d9" font-family="Consolas, 'SFMono-Regular', 'Liberation Mono', Menlo, monospace" font-size="14.5" xml:space="preserve">Nmap done: 1 IP address (1 host up) scanned in 3.87 seconds</text>
+  <text x="26" y="331" fill="#3fb950" font-family="Consolas, 'SFMono-Regular', 'Liberation Mono', Menlo, monospace" font-size="14.5" xml:space="preserve">✓ Only 22, 80 and 443 are exposed — everything else filtered.</text>
+  </svg>

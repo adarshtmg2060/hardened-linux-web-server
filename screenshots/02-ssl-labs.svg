@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="660" viewBox="0 0 1000 660" role="img" aria-label="SSL Labs report showing grade A+">
+  <rect width="1000" height="660" rx="10" fill="#0d1117"/>
+  <path d="M0 10 A10 10 0 0 1 10 0 H990 A10 10 0 0 1 1000 10 V44 H0 Z" fill="#161b22"/>
+  <circle cx="26" cy="22" r="7" fill="#ff5f56"/>
+  <circle cx="50" cy="22" r="7" fill="#ffbd2e"/>
+  <circle cx="74" cy="22" r="7" fill="#27c93f"/>
+  <text x="500" y="27" text-anchor="middle" fill="#8b949e" font-family="Consolas, 'SFMono-Regular', 'Liberation Mono', Menlo, monospace" font-size="14">SSL Labs — SSL Report for hardened.example.com</text>
+  <rect x="0" y="44" width="1000" height="616" fill="#ffffff"/>
+  <text x="30" y="92" fill="#24292f" font-family="Consolas, 'SFMono-Regular', 'Liberation Mono', Menlo, monospace" font-size="22" font-weight="bold">SSL Report</text>
+  <text x="30" y="122" fill="#57606a" font-family="Consolas, 'SFMono-Regular', 'Liberation Mono', Menlo, monospace" font-size="15">hardened.example.com  •  scanned 2026-11-20 09:31 UTC</text>
+  <rect x="30" y="150" width="940" height="142" rx="8" fill="#f6f8fa" stroke="#d0d7de"/>
+  <text x="55" y="196" fill="#57606a" font-family="Consolas, 'SFMono-Regular', 'Liberation Mono', Menlo, monospace" font-size="14">Overall Rating</text>
+  <text x="55" y="268" fill="#2da44e" font-family="Consolas, 'SFMono-Regular', 'Liberation Mono', Menlo, monospace" font-size="66" font-weight="bold">A+</text>
+  <text x="230" y="200" fill="#1a7f37" font-family="Consolas, 'SFMono-Regular', 'Liberation Mono', Menlo, monospace" font-size="16" font-weight="bold">Certificate is valid &#10003;</text>
+  <text x="230" y="228" fill="#24292f" font-family="Consolas, 'SFMono-Regular', 'Liberation Mono', Menlo, monospace" font-size="14">Issuer: Let's Encrypt R3   •   Expires: 2027-02-18   •   Valid chain: Yes</text>
+  <text x="230" y="256" fill="#24292f" font-family="Consolas, 'SFMono-Regular', 'Liberation Mono', Menlo, monospace" font-size="14">Subject Alternative Names: hardened.example.com, www.hardened.example.com</text>
+  <text x="230" y="284" fill="#24292f" font-family="Consolas, 'SFMono-Regular', 'Liberation Mono', Menlo, monospace" font-size="14">Key: RSA 2048 bits   •   Signature algorithm: SHA256withRSA</text>
+  <text x="30" y="340" fill="#24292f" font-family="Consolas, 'SFMono-Regular', 'Liberation Mono', Menlo, monospace" font-size="16" font-weight="bold">Protocol Support</text>
+  <rect x="30" y="354" width="455" height="2" fill="#d0d7de"/>
+  <text x="30" y="388" fill="#57606a" font-family="Consolas, 'SFMono-Regular', 'Liberation Mono', Menlo, monospace" font-size="14">TLS 1.3</text>
+  <text x="485" y="388" text-anchor="end" fill="#1a7f37" font-family="Consolas, 'SFMono-Regular', 'Liberation Mono', Menlo, monospace" font-size="14" font-weight="bold">Yes</text>
+  <text x="30" y="420" fill="#57606a" font-family="Consolas, 'SFMono-Regular', 'Liberation Mono', Menlo, monospace" font-size="14">TLS 1.2</text>
+  <text x="485" y="420" text-anchor="end" fill="#1a7f37" font-family="Consolas, 'SFMono-Regular', 'Liberation Mono', Menlo, monospace" font-size="14" font-weight="bold">Yes</text>
+  <text x="30" y="452" fill="#57606a" font-family="Consolas, 'SFMono-Regular', 'Liberation Mono', Menlo, monospace" font-size="14">TLS 1.1</text>
+  <text x="485" y="452" text-anchor="end" fill="#cf222e" font-family="Consolas, 'SFMono-Regular', 'Liberation Mono', Menlo, monospace" font-size="14" font-weight="bold">No</text>
+  <text x="30" y="484" fill="#57606a" font-family="Consolas, 'SFMono-Regular', 'Liberation Mono', Menlo, monospace" font-size="14">TLS 1.0</text>
+  <text x="485" y="484" text-anchor="end" fill="#cf222e" font-family="Consolas, 'SFMono-Regular', 'Liberation Mono', Menlo, monospace" font-size="14" font-weight="bold">No</text>
+  <text x="30" y="516" fill="#57606a" font-family="Consolas, 'SFMono-Regular', 'Liberation Mono', Menlo, monospace" font-size="14">SSL 3 / 2</text>
+  <text x="485" y="516" text-anchor="end" fill="#cf222e" font-family="Consolas, 'SFMono-Regular', 'Liberation Mono', Menlo, monospace" font-size="14" font-weight="bold">No</text>
+  <text x="515" y="340" fill="#24292f" font-family="Consolas, 'SFMono-Regular', 'Liberation Mono', Menlo, monospace" font-size="16" font-weight="bold">Protocol Details</text>
+  <rect x="515" y="354" width="455" height="2" fill="#d0d7de"/>
+  <text x="515" y="388" fill="#57606a" font-family="Consolas, 'SFMono-Regular', 'Liberation Mono', Menlo, monospace" font-size="14">HSTS</text>
+  <text x="970" y="388" text-anchor="end" fill="#1a7f37" font-family="Consolas, 'SFMono-Regular', 'Liberation Mono', Menlo, monospace" font-size="14" font-weight="bold">yes — max-age=31536000</text>
+  <text x="515" y="420" fill="#57606a" font-family="Consolas, 'SFMono-Regular', 'Liberation Mono', Menlo, monospace" font-size="14">OCSP stapling</text>
+  <text x="970" y="420" text-anchor="end" fill="#1a7f37" font-family="Consolas, 'SFMono-Regular', 'Liberation Mono', Menlo, monospace" font-size="14" font-weight="bold">Yes</text>
+  <text x="515" y="452" fill="#57606a" font-family="Consolas, 'SFMono-Regular', 'Liberation Mono', Menlo, monospace" font-size="14">Forward secrecy</text>
+  <text x="970" y="452" text-anchor="end" fill="#1a7f37" font-family="Consolas, 'SFMono-Regular', 'Liberation Mono', Menlo, monospace" font-size="14" font-weight="bold">Yes</text>
+  <text x="515" y="484" fill="#57606a" font-family="Consolas, 'SFMono-Regular', 'Liberation Mono', Menlo, monospace" font-size="14">Server header</text>
+  <text x="970" y="484" text-anchor="end" fill="#1a7f37" font-family="Consolas, 'SFMono-Regular', 'Liberation Mono', Menlo, monospace" font-size="14" font-weight="bold">nginx (version hidden)</text>
+  <text x="515" y="516" fill="#57606a" font-family="Consolas, 'SFMono-Regular', 'Liberation Mono', Menlo, monospace" font-size="14">Session resumption</text>
+  <text x="970" y="516" text-anchor="end" fill="#1a7f37" font-family="Consolas, 'SFMono-Regular', 'Liberation Mono', Menlo, monospace" font-size="14" font-weight="bold">IDs: Yes, Tickets: Yes</text>
+  <rect x="30" y="580" width="940" height="46" rx="8" fill="#dafbe1" stroke="#2da44e"/>
+  <text x="50" y="609" fill="#1a7f37" font-family="Consolas, 'SFMono-Regular', 'Liberation Mono', Menlo, monospace" font-size="15">&#10003; Grade A+ — modern protocols only, HSTS and OCSP stapling enabled.</text>
+  </svg>

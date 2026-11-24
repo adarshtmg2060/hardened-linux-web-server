@@ -11,6 +11,8 @@
 ![Firewall](https://img.shields.io/badge/ufw-22%20%7C%2080%20%7C%20443-orange?style=flat-square)
 ![License](https://img.shields.io/badge/license-MIT-blue?style=flat-square)
 
+[Documentation](#documentation) · [Screenshots](#screenshots) · [Verification results](#results-example-layout--replace-with-your-own-numbers)
+
 One server, three doors, everything else closed.
 
 ---
@@ -61,6 +63,20 @@ flowchart LR
 
 Full rationale and threat model: [`docs/architecture.md`](docs/architecture.md).
 
+## Documentation
+
+Everything is written up in [`docs/`](docs/) — click through from here:
+
+| Doc | What you'll find |
+|---|---|
+| [`docs/architecture.md`](docs/architecture.md) | Trust boundaries, threat model and why each design choice was made |
+| [`docs/installation.md`](docs/installation.md) | Manual command-by-command build plus the one-script path |
+| [`docs/security-hardening.md`](docs/security-hardening.md) | Every setting explained: users, SSH, ufw, nginx, TLS, fail2ban, updates |
+| [`docs/verification.md`](docs/verification.md) | nmap / SSL Labs / auth.log checks with a fill-in results table |
+| [`docs/troubleshooting.md`](docs/troubleshooting.md) | "I locked myself out" and other recovery playbooks |
+
+The evidence index with all captures is in [`screenshots/README.md`](screenshots/README.md).
+
 ## Repository layout
 
 ```text
@@ -89,7 +105,9 @@ hardened-linux-web-server/
 │   ├── security-hardening.md     # every setting explained
 │   ├── verification.md           # nmap / SSL Labs / auth.log + results table
 │   └── troubleshooting.md        # "I locked myself out" and friends
-├── screenshots/                  # your evidence images go here
+├── screenshots/                  # verification captures (indexed in its README)
+│   ├── README.md                 # gallery + guide to replacing captures
+│   └── 01-nmap.svg … 10-rebuild.svg  # illustrative evidence images
 ├── Makefile                      # make verify / lint / help
 └── .github/workflows/lint.yml    # ShellCheck in CI
 ```
@@ -174,6 +192,37 @@ Fill your own figures into the table in
 | Failed passwords / 24 h | depends on your IP | `___` |
 | Banned IPs | fail2ban `Total banned` | `___` |
 | Rebuild from script | passed | `___` |
+
+## Screenshots
+
+Illustrative captures for each check above, using documentation-only IPs and
+domains (`203.0.113.x`, `hardened.example.com`) — swap in your own real evidence
+after deployment. Click any image to open the full-size file.
+
+<table>
+<tr>
+<td align="center" width="50%"><a href="screenshots/01-nmap.svg"><img src="screenshots/01-nmap.svg" width="100%" alt="nmap showing only ports 22, 80 and 443"></a><br><sub><b>01 · nmap</b> — only 22, 80, 443 open</sub></td>
+<td align="center" width="50%"><a href="screenshots/02-ssl-labs.svg"><img src="screenshots/02-ssl-labs.svg" width="100%" alt="SSL Labs grade A+ report"></a><br><sub><b>02 · SSL Labs</b> — grade A+, TLS 1.2/1.3, HSTS</sub></td>
+</tr>
+<tr>
+<td align="center"><a href="screenshots/03-password-denied.svg"><img src="screenshots/03-password-denied.svg" width="100%" alt="password SSH login denied"></a><br><sub><b>03 · password denied</b> — Permission denied (publickey)</sub></td>
+<td align="center"><a href="screenshots/04-key-login.svg"><img src="screenshots/04-key-login.svg" width="100%" alt="successful key-based SSH login"></a><br><sub><b>04 · key login</b> — deploy user in via SSH key</sub></td>
+</tr>
+<tr>
+<td align="center"><a href="screenshots/05-ufw.svg"><img src="screenshots/05-ufw.svg" width="100%" alt="ufw status verbose"></a><br><sub><b>05 · ufw</b> — default deny, 22/80/443 allowed</sub></td>
+<td align="center"><a href="screenshots/06-fail2ban.svg"><img src="screenshots/06-fail2ban.svg" width="100%" alt="fail2ban sshd jail status"></a><br><sub><b>06 · fail2ban</b> — bans and recidive jail</sub></td>
+</tr>
+<tr>
+<td align="center"><a href="screenshots/07-authlog.svg"><img src="screenshots/07-authlog.svg" width="100%" alt="failed password attempts in auth.log"></a><br><sub><b>07 · auth.log</b> — bot attempts, quantified</sub></td>
+<td align="center"><a href="screenshots/08-certbot-timer.svg"><img src="screenshots/08-certbot-timer.svg" width="100%" alt="certbot timer and dry-run renewal"></a><br><sub><b>08 · certbot</b> — auto-renewal verified</sub></td>
+</tr>
+<tr>
+<td align="center"><a href="screenshots/09-site.svg"><img src="screenshots/09-site.svg" width="100%" alt="site served over HTTPS"></a><br><sub><b>09 · site</b> — HTTPS landing page + headers</sub></td>
+<td align="center"><a href="screenshots/10-rebuild.svg"><img src="screenshots/10-rebuild.svg" width="100%" alt="rebuild from one script"></a><br><sub><b>10 · rebuild</b> — one idempotent script, twice</sub></td>
+</tr>
+</table>
+
+Full index, descriptions and replacement guide: [`screenshots/README.md`](screenshots/README.md).
 
 ## CV line
 

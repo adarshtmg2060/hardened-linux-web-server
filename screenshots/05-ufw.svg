@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="480" viewBox="0 0 1000 480" role="img" aria-label="terminal — ufw status verbose">
+  <rect width="1000" height="480" rx="10" fill="#0d1117"/>
+  <path d="M0 10 A10 10 0 0 1 10 0 H990 A10 10 0 0 1 1000 10 V44 H0 Z" fill="#161b22"/>
+  <circle cx="26" cy="22" r="7" fill="#ff5f56"/>
+  <circle cx="50" cy="22" r="7" fill="#ffbd2e"/>
+  <circle cx="74" cy="22" r="7" fill="#27c93f"/>
+  <text x="500" y="27" text-anchor="middle" fill="#8b949e" font-family="Consolas, 'SFMono-Regular', 'Liberation Mono', Menlo, monospace" font-size="14">terminal — ufw status verbose</text>
+  <text x="26" y="78" fill="#3fb950" font-family="Consolas, 'SFMono-Regular', 'Liberation Mono', Menlo, monospace" font-size="14.5" xml:space="preserve">$ </text>
+  <text x="43.429" y="78" fill="#e6edf3" font-family="Consolas, 'SFMono-Regular', 'Liberation Mono', Menlo, monospace" font-size="14.5" xml:space="preserve">sudo ufw status verbose</text>
+  <text x="26" y="101" fill="#3fb950" font-family="Consolas, 'SFMono-Regular', 'Liberation Mono', Menlo, monospace" font-size="14.5" xml:space="preserve">Status: active</text>
+  <text x="26" y="124" fill="#c9d1d9" font-family="Consolas, 'SFMono-Regular', 'Liberation Mono', Menlo, monospace" font-size="14.5" xml:space="preserve">Logging: on (low)</text>
+  <text x="26" y="147" fill="#c9d1d9" font-family="Consolas, 'SFMono-Regular', 'Liberation Mono', Menlo, monospace" font-size="14.5" xml:space="preserve">Default: deny (incoming), allow (outgoing), deny (routed)</text>
+  <text x="26" y="170" fill="#c9d1d9" font-family="Consolas, 'SFMono-Regular', 'Liberation Mono', Menlo, monospace" font-size="14.5" xml:space="preserve">New profiles: skip</text>
+  <text x="26" y="193" fill="#c9d1d9" font-family="Consolas, 'SFMono-Regular', 'Liberation Mono', Menlo, monospace" font-size="14.5" xml:space="preserve"></text>
+  <text x="26" y="216" fill="#8b949e" font-family="Consolas, 'SFMono-Regular', 'Liberation Mono', Menlo, monospace" font-size="14.5" xml:space="preserve">To                         Action      From</text>
+  <text x="26" y="239" fill="#8b949e" font-family="Consolas, 'SFMono-Regular', 'Liberation Mono', Menlo, monospace" font-size="14.5" xml:space="preserve">--                         ------      ----</text>
+  <text x="26" y="262" fill="#c9d1d9" font-family="Consolas, 'SFMono-Regular', 'Liberation Mono', Menlo, monospace" font-size="14.5" xml:space="preserve">22/tcp                     ALLOW IN    </text>
+  <text x="365.8655" y="262" fill="#58a6ff" font-family="Consolas, 'SFMono-Regular', 'Liberation Mono', Menlo, monospace" font-size="14.5" xml:space="preserve">Anywhere</text>
+  <text x="26" y="285" fill="#c9d1d9" font-family="Consolas, 'SFMono-Regular', 'Liberation Mono', Menlo, monospace" font-size="14.5" xml:space="preserve">80/tcp                     ALLOW IN    </text>
+  <text x="365.8655" y="285" fill="#58a6ff" font-family="Consolas, 'SFMono-Regular', 'Liberation Mono', Menlo, monospace" font-size="14.5" xml:space="preserve">Anywhere</text>
+  <text x="26" y="308" fill="#c9d1d9" font-family="Consolas, 'SFMono-Regular', 'Liberation Mono', Menlo, monospace" font-size="14.5" xml:space="preserve">443/tcp                    ALLOW IN    </text>
+  <text x="365.8655" y="308" fill="#58a6ff" font-family="Consolas, 'SFMono-Regular', 'Liberation Mono', Menlo, monospace" font-size="14.5" xml:space="preserve">Anywhere</text>
+  <text x="26" y="331" fill="#c9d1d9" font-family="Consolas, 'SFMono-Regular', 'Liberation Mono', Menlo, monospace" font-size="14.5" xml:space="preserve">22/tcp (v6)                ALLOW IN    </text>
+  <text x="365.8655" y="331" fill="#58a6ff" font-family="Consolas, 'SFMono-Regular', 'Liberation Mono', Menlo, monospace" font-size="14.5" xml:space="preserve">Anywhere (v6)</text>
+  <text x="26" y="354" fill="#c9d1d9" font-family="Consolas, 'SFMono-Regular', 'Liberation Mono', Menlo, monospace" font-size="14.5" xml:space="preserve">80/tcp (v6)                ALLOW IN    </text>
+  <text x="365.8655" y="354" fill="#58a6ff" font-family="Consolas, 'SFMono-Regular', 'Liberation Mono', Menlo, monospace" font-size="14.5" xml:space="preserve">Anywhere (v6)</text>
+  <text x="26" y="377" fill="#c9d1d9" font-family="Consolas, 'SFMono-Regular', 'Liberation Mono', Menlo, monospace" font-size="14.5" xml:space="preserve">443/tcp (v6)               ALLOW IN    </text>
+  <text x="365.8655" y="377" fill="#58a6ff" font-family="Consolas, 'SFMono-Regular', 'Liberation Mono', Menlo, monospace" font-size="14.5" xml:space="preserve">Anywhere (v6)</text>
+  <text x="26" y="400" fill="#c9d1d9" font-family="Consolas, 'SFMono-Regular', 'Liberation Mono', Menlo, monospace" font-size="14.5" xml:space="preserve"></text>
+  <text x="26" y="423" fill="#3fb950" font-family="Consolas, 'SFMono-Regular', 'Liberation Mono', Menlo, monospace" font-size="14.5" xml:space="preserve">✓ Default-deny inbound; only the three intended doors are open.</text>
+  </svg>

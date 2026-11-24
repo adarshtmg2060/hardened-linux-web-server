@@ -1,5 +1,7 @@
 # Architecture
 
+> Part of the [main README](../readme.md) · [Screenshot evidence](../screenshots/README.md)
+
 One small cloud VM, deliberately boring. There is no database, no app runtime
 and no management panel — which is exactly why it is a good first hardening
 target. Every additional daemon is another door to guard.

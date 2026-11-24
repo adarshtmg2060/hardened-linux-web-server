@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="480" viewBox="0 0 1000 480" role="img" aria-label="terminal — fail2ban sshd jail">
+  <rect width="1000" height="480" rx="10" fill="#0d1117"/>
+  <path d="M0 10 A10 10 0 0 1 10 0 H990 A10 10 0 0 1 1000 10 V44 H0 Z" fill="#161b22"/>
+  <circle cx="26" cy="22" r="7" fill="#ff5f56"/>
+  <circle cx="50" cy="22" r="7" fill="#ffbd2e"/>
+  <circle cx="74" cy="22" r="7" fill="#27c93f"/>
+  <text x="500" y="27" text-anchor="middle" fill="#8b949e" font-family="Consolas, 'SFMono-Regular', 'Liberation Mono', Menlo, monospace" font-size="14">terminal — fail2ban sshd jail</text>
+  <text x="26" y="78" fill="#3fb950" font-family="Consolas, 'SFMono-Regular', 'Liberation Mono', Menlo, monospace" font-size="14.5" xml:space="preserve">$ </text>
+  <text x="43.429" y="78" fill="#e6edf3" font-family="Consolas, 'SFMono-Regular', 'Liberation Mono', Menlo, monospace" font-size="14.5" xml:space="preserve">sudo fail2ban-client status sshd</text>
+  <text x="26" y="101" fill="#c9d1d9" font-family="Consolas, 'SFMono-Regular', 'Liberation Mono', Menlo, monospace" font-size="14.5" xml:space="preserve">Status for the jail: sshd</text>
+  <text x="26" y="124" fill="#c9d1d9" font-family="Consolas, 'SFMono-Regular', 'Liberation Mono', Menlo, monospace" font-size="14.5" xml:space="preserve">|- Filter</text>
+  <text x="26" y="147" fill="#c9d1d9" font-family="Consolas, 'SFMono-Regular', 'Liberation Mono', Menlo, monospace" font-size="14.5" xml:space="preserve">|  |- Currently failed: 7</text>
+  <text x="26" y="170" fill="#c9d1d9" font-family="Consolas, 'SFMono-Regular', 'Liberation Mono', Menlo, monospace" font-size="14.5" xml:space="preserve">|  |- Total failed:     </text>
+  <text x="235.148" y="170" fill="#d29922" font-family="Consolas, 'SFMono-Regular', 'Liberation Mono', Menlo, monospace" font-size="14.5" xml:space="preserve">2147</text>
+  <text x="26" y="193" fill="#c9d1d9" font-family="Consolas, 'SFMono-Regular', 'Liberation Mono', Menlo, monospace" font-size="14.5" xml:space="preserve">|  `- File list:        /var/log/auth.log</text>
+  <text x="26" y="216" fill="#c9d1d9" font-family="Consolas, 'SFMono-Regular', 'Liberation Mono', Menlo, monospace" font-size="14.5" xml:space="preserve">`- Actions</text>
+  <text x="26" y="239" fill="#c9d1d9" font-family="Consolas, 'SFMono-Regular', 'Liberation Mono', Menlo, monospace" font-size="14.5" xml:space="preserve">   |- Currently banned: 3</text>
+  <text x="26" y="262" fill="#c9d1d9" font-family="Consolas, 'SFMono-Regular', 'Liberation Mono', Menlo, monospace" font-size="14.5" xml:space="preserve">   |- Total banned:     </text>
+  <text x="235.148" y="262" fill="#d29922" font-family="Consolas, 'SFMono-Regular', 'Liberation Mono', Menlo, monospace" font-size="14.5" xml:space="preserve">38</text>
+  <text x="26" y="285" fill="#c9d1d9" font-family="Consolas, 'SFMono-Regular', 'Liberation Mono', Menlo, monospace" font-size="14.5" xml:space="preserve">   `- Banned IP list:   198.51.100.23 198.51.100.77 203.0.113.9</text>
+  <text x="26" y="308" fill="#c9d1d9" font-family="Consolas, 'SFMono-Regular', 'Liberation Mono', Menlo, monospace" font-size="14.5" xml:space="preserve"></text>
+  <text x="26" y="331" fill="#3fb950" font-family="Consolas, 'SFMono-Regular', 'Liberation Mono', Menlo, monospace" font-size="14.5" xml:space="preserve">$ </text>
+  <text x="43.429" y="331" fill="#e6edf3" font-family="Consolas, 'SFMono-Regular', 'Liberation Mono', Menlo, monospace" font-size="14.5" xml:space="preserve">sudo fail2ban-client status recidive</text>
+  <text x="26" y="354" fill="#c9d1d9" font-family="Consolas, 'SFMono-Regular', 'Liberation Mono', Menlo, monospace" font-size="14.5" xml:space="preserve">   |- Total banned:     </text>
+  <text x="235.148" y="354" fill="#d29922" font-family="Consolas, 'SFMono-Regular', 'Liberation Mono', Menlo, monospace" font-size="14.5" xml:space="preserve">4</text>
+  <text x="26" y="377" fill="#c9d1d9" font-family="Consolas, 'SFMono-Regular', 'Liberation Mono', Menlo, monospace" font-size="14.5" xml:space="preserve">   `- Banned IP list:   198.51.100.23</text>
+  <text x="26" y="400" fill="#c9d1d9" font-family="Consolas, 'SFMono-Regular', 'Liberation Mono', Menlo, monospace" font-size="14.5" xml:space="preserve"></text>
+  <text x="26" y="423" fill="#3fb950" font-family="Consolas, 'SFMono-Regular', 'Liberation Mono', Menlo, monospace" font-size="14.5" xml:space="preserve">✓ Repeat offenders land in the 1-week recidive jail.</text>
+  </svg>
