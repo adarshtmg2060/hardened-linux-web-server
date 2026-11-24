@@ -1,0 +1,55 @@
+# /etc/fail2ban/jail.local
+# Managed by scripts/configure-fail2ban.sh — do not edit by hand.
+#
+# Bans are enforced with ufw (banaction = ufw), so `fail2ban-client status sshd`
+# and `ufw status` stay in sync.
+
+[DEFAULT]
+bantime  = 1h
+findtime = 10m
+maxretry = 5
+banaction = ufw
+banaction_allports = ufw
+
+# Email is opt-in: set enable_email_notifications=1 in config/.env.
+destemail = __ADMIN_EMAIL__
+sender    = fail2ban@__DOMAIN__
+mta       = sendmail
+action    = %(action_)s
+
+# ---------------------------------------------------------------------------
+# SSH — read the systemd journal (auth.log is mirrored there on modern
+# Debian/Ubuntu). Three bad keys in ten minutes earns a one-hour ban.
+# ---------------------------------------------------------------------------
+[sshd]
+enabled  = true
+port     = ssh
+filter   = sshd
+backend  = systemd
+maxretry = 3
+findtime = 10m
+bantime  = 1h
+
+# ---------------------------------------------------------------------------
+# nginx — broken HTTP auth attempts against the site.
+# ---------------------------------------------------------------------------
+[nginx-http-auth]
+enabled  = true
+port     = http,https
+filter   = nginx-http-auth
+logpath  = /var/log/nginx/error.log
+maxretry = 5
+findtime = 10m
+bantime  = 1h
+
+# ---------------------------------------------------------------------------
+# Repeat offenders: three separate bans in a day = one week in the doghouse.
+# ---------------------------------------------------------------------------
+[recidive]
+enabled  = true
+filter   = recidive
+logpath  = /var/log/fail2ban.log
+backend  = auto
+maxretry = 3
+findtime = 1d
+bantime  = 1w

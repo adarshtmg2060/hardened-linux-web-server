@@ -1,0 +1,53 @@
+# /etc/ssh/sshd_config.d/99-hardening.conf
+# Managed by scripts/configure-ssh.sh — do not edit by hand.
+#
+# OpenSSH uses the FIRST value it sees for most keywords. Debian/Ubuntu ships
+# an active `Include /etc/ssh/sshd_config.d/*.conf` at the top of the main
+# sshd_config, so this drop-in takes precedence over the shipped defaults.
+
+# --- Transport -------------------------------------------------------------
+Port 22
+AddressFamily any
+Protocol 2
+
+# Strong host keys only (ED25519 preferred, RSA as fallback for old clients).
+HostKey /etc/ssh/ssh_host_ed25519_key
+HostKey /etc/ssh/ssh_host_rsa_key
+
+# --- Authentication: keys only, no root ------------------------------------
+PubkeyAuthentication yes
+AuthorizedKeysFile .ssh/authorized_keys
+AuthenticationMethods publickey
+PasswordAuthentication no
+KbdInteractiveAuthentication no
+PermitEmptyPasswords no
+PermitRootLogin no
+UsePAM yes
+
+# Only the dedicated admin account may log in.
+AllowUsers __ADMIN_USER__
+
+# --- Brute-force / exposure reduction --------------------------------------
+MaxAuthTries 3
+MaxSessions 4
+LoginGraceTime 30
+StrictModes yes
+IgnoreRhosts yes
+HostbasedAuthentication no
+
+# --- No interactive extras, no forwarding ----------------------------------
+X11Forwarding no
+AllowAgentForwarding no
+AllowTcpForwarding no
+PermitTunnel no
+PermitUserEnvironment no
+
+# --- Dead-session cleanup ---------------------------------------------------
+ClientAliveInterval 300
+ClientAliveCountMax 2
+TCPKeepAlive no
+
+# --- UX ---------------------------------------------------------------------
+PrintMotd no
+PrintLastLog yes
+Banner /etc/ssh/ssh_banner

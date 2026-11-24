@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="A hardened, reproducible public Linux web server: key-only SSH, ufw, nginx + auto-renewing TLS, fail2ban and unattended upgrades.">
+  <meta name="theme-color" content="#0b1120">
+  <title>Hardened Linux Web Server</title>
+  <style>
+    :root {
+      --bg: #0b1120;
+      --panel: #111a2e;
+      --panel-2: #16223b;
+      --line: #22304d;
+      --text: #e6edf7;
+      --muted: #94a3b8;
+      --accent: #38bdf8;
+      --green: #4ade80;
+      --amber: #fbbf24;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      min-height: 100vh;
+      font-family: ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      color: var(--text);
+      background:
+        radial-gradient(900px 500px at 85% -10%, rgba(56,189,248,.14), transparent 60%),
+        radial-gradient(700px 400px at 0% 100%, rgba(74,222,128,.08), transparent 60%),
+        var(--bg);
+      line-height: 1.6;
+    }
+    .wrap { max-width: 1080px; margin: 0 auto; padding: 0 22px; }
+    header { padding: 26px 0; border-bottom: 1px solid var(--line); }
+    .brand { display: flex; align-items: center; gap: 12px; font-weight: 700; letter-spacing: .2px; }
+    .brand svg { width: 30px; height: 30px; }
+    .brand small { display: block; font-weight: 400; color: var(--muted); font-size: 12px; }
+    .hero { padding: 78px 0 46px; display: grid; grid-template-columns: 1.25fr .75fr; gap: 50px; align-items: center; }
+    h1 { font-size: clamp(2.1rem, 5vw, 3.5rem); line-height: 1.1; margin: 0 0 18px; letter-spacing: -1.5px; }
+    h1 span { color: var(--accent); }
+    .lede { color: var(--muted); font-size: 1.08rem; max-width: 62ch; }
+    .badges { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 26px; }
+    .badge {
+      font: 600 12px/1.2 ui-monospace, SFMono-Regular, Menlo, monospace;
+      padding: 7px 11px; border: 1px solid var(--line); border-radius: 999px;
+      background: var(--panel); color: var(--muted);
+    }
+    .badge.ok { color: var(--green); border-color: rgba(74,222,128,.35); }
+    .shield { filter: drop-shadow(0 18px 40px rgba(56,189,248,.18)); }
+    section { padding: 34px 0; border-top: 1px solid var(--line); }
+    h2 { font-size: 1.35rem; margin: 0 0 20px; letter-spacing: -.3px; }
+    .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(230px, 1fr)); gap: 14px; }
+    .card {
+      background: linear-gradient(160deg, var(--panel-2), var(--panel));
+      border: 1px solid var(--line); border-radius: 14px; padding: 20px;
+    }
+    .card h3 { margin: 0 0 6px; font-size: .98rem; }
+    .card p { margin: 0; color: var(--muted); font-size: .9rem; }
+    .tag { font: 600 11px/1 ui-monospace, monospace; color: var(--accent); }
+    .flow {
+      display: flex; flex-wrap: wrap; align-items: center; gap: 10px;
+      font: 600 13px/1.4 ui-monospace, monospace;
+    }
+    .node { background: var(--panel); border: 1px solid var(--line); border-radius: 9px; padding: 10px 14px; }
+    .node.hot { border-color: rgba(74,222,128,.4); color: var(--green); }
+    .arrow { color: var(--muted); }
+    ul.checks { list-style: none; padding: 0; margin: 0; display: grid; gap: 10px; }
+    ul.checks li { display: flex; gap: 10px; align-items: flex-start; color: var(--muted); font-size: .94rem; }
+    ul.checks li::before { content: "✓"; color: var(--green); font-weight: 800; }
+    code { font-family: ui-monospace, SFMono-Regular, Menlo, monospace; color: #cbd5e1; }
+    footer { padding: 30px 0 50px; border-top: 1px solid var(--line); color: var(--muted); font-size: .88rem; }
+    footer a { color: var(--accent); text-decoration: none; }
+    footer a:hover { text-decoration: underline; }
+    @media (max-width: 780px) {
+      .hero { grid-template-columns: 1fr; padding-top: 50px; }
+      .shield { max-width: 230px; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="wrap brand">
+      <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+        <path d="M12 2 4 5v6c0 5 3.4 9.4 8 11 4.6-1.6 8-6 8-11V5l-8-3Z" fill="#0e7490" stroke="#38bdf8" stroke-width="1.5"/>
+        <path d="m8.5 12 2.3 2.3 4.7-4.9" stroke="#4ade80" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+      <div>
+        Hardened Linux Web Server
+        <small>One VM. Three doors. Everything else closed.</small>
+      </div>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <div class="hero">
+      <div>
+        <h1>Built to be <span>exposed.</span></h1>
+        <p class="lede">
+          A bare Ubuntu/Debian VM turned into a locked-down, patchable,
+          fully reproducible public web server — from a single idempotent
+          Bash script. Every control here was verified from the attacker's side.
+        </p>
+        <div class="badges">
+          <span class="badge ok">SSH: KEYS ONLY</span>
+          <span class="badge ok">UFW: 22 / 80 / 443</span>
+          <span class="badge ok">TLS A+ READY</span>
+          <span class="badge ok">FAIL2BAN ACTIVE</span>
+          <span class="badge">AUTO-UPDATES ON</span>
+          <span class="badge">IDEMPOTENT SCRIPT</span>
+        </div>
+      </div>
+      <svg class="shield" viewBox="0 0 220 240" role="img" aria-label="Shield with checkmark">
+        <defs>
+          <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
+            <stop offset="0" stop-color="#38bdf8"/><stop offset="1" stop-color="#4ade80"/>
+          </linearGradient>
+        </defs>
+        <path d="M110 8 28 40v78c0 55 35 101 82 116 47-15 82-61 82-116V40L110 8Z"
+              fill="#111a2e" stroke="url(#g)" stroke-width="4"/>
+        <path d="M110 30 46 54v62c0 43 27 79 64 92 37-13 64-49 64-92V54L110 30Z"
+              fill="none" stroke="#22304d" stroke-width="2"/>
+        <path d="m74 120 26 26 48-54" fill="none" stroke="url(#g)" stroke-width="11"
+              stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+    </div>
+
+    <section>
+      <h2>The five hardening layers</h2>
+      <div class="grid">
+        <div class="card"><span class="tag">01 / IDENTITY</span><h3>Key-only SSH</h3>
+          <p>Non-root admin, <code>PermitRootLogin no</code>, <code>AuthenticationMethods publickey</code>, no forwarding.</p></div>
+        <div class="card"><span class="tag">02 / NETWORK</span><h3>ufw firewall</h3>
+          <p>Default-deny inbound. Only 22, 80 and 443 — the three doors that are actually needed.</p></div>
+        <div class="card"><span class="tag">03 / TRANSPORT</span><h3>nginx + TLS 1.2/1.3</h3>
+          <p>Auto-renewing Let's Encrypt certificate, HSTS, CSP, OCSP stapling and a dedicated web user.</p></div>
+        <div class="card"><span class="tag">04 / RESPONSE</span><h3>fail2ban</h3>
+          <p>Three failed SSH keys in ten minutes = one-hour ufw ban. Repeat offenders get a week.</p></div>
+        <div class="card"><span class="tag">05 / MAINTENANCE</span><h3>Unattended upgrades</h3>
+          <p>Security pockets patched daily, unused dependencies removed, reboots left to the operator.</p></div>
+        <div class="card"><span class="tag">06 / REBUILD</span><h3>One script</h3>
+          <p><code>setup.sh</code> with <code>set -euo pipefail</code>, timestamped backups and safe re-runs.</p></div>
+      </div>
+    </section>
+
+    <section>
+      <h2>Traffic path</h2>
+      <div class="flow">
+        <span class="node">Internet</span><span class="arrow">→</span>
+        <span class="node">ufw :22 / :80 / :443</span><span class="arrow">→</span>
+        <span class="node hot">nginx (webuser)</span><span class="arrow">→</span>
+        <span class="node">static site :640</span>
+      </div>
+      <p class="lede" style="margin-top:16px">
+        SSH failures feed the systemd journal; fail2ban reads it and writes bans straight into ufw.
+        Certificate renewals are handled by <code>certbot.timer</code>, which reloads nginx via a deploy hook.
+      </p>
+    </section>
+
+    <section>
+      <h2>Verified from outside</h2>
+      <ul class="checks">
+        <li><code>nmap -Pn --top-ports 200</code> reports only 22, 80 and 443 open.</li>
+        <li>Password SSH login is refused; key-based login succeeds.</li>
+        <li>SSL Labs reports a valid, auto-renewing certificate with HSTS.</li>
+        <li><code>/var/log/auth.log</code> shows the bot noise that fail2ban filtered out.</li>
+        <li>The whole build was repeated from scratch with <code>setup.sh</code> alone.</li>
+      </ul>
+    </section>
+  </main>
+
+  <footer>
+    <div class="wrap">
+      Source, scripts and verification notes:
+      <a href="https://github.com/adarshtmg2060/hardened-linux-web-server">github.com/adarshtmg2060/hardened-linux-web-server</a>
+      &nbsp;·&nbsp; Served by nginx as <code>webuser</code>.
+    </div>
+  </footer>
+</body>
+</html>
